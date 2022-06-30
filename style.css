@@ -1,5 +1,42 @@
 body {
     margin: 0px;
+    background: #1b1a1d;
+}
+
+p {
+    margin: 0px;
+}
+
+.container {
+    display: flex;
+}
+
+.text-lg {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    color: #ffffff;
+}
+
+.text-base {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #ffffff;
+}
+
+.text-2xl {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+    color: #ffffff;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 #side-bar {
@@ -9,16 +46,16 @@ body {
     display: flex;
     flex-direction: column;
     gap: 45px;
+    box-sizing: border-box;
 }
 
-.large-text {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 150%;
-    color: #ffffff;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+#greeting-block {
+    text-align: center;
+}
+
+#avatar {
+    border-radius: 100%;
+    margin-bottom: 25px;
 }
 
 .title-text {
@@ -33,40 +70,165 @@ body {
     margin: 0px;
 }
 
-#store-block {
+.menu-block {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.store-row {
+.store-btn {
     height: 50px;
     display: flex;
     align-items: center;
     gap: 30px;
+    background-color: transparent;
+    border: 0px;
+    color: rgba(255, 255, 255, 0.4);
+    display: flex;
+    align-items: center;
 }
 
 .icon-block {
     width: 50px;
     height: 50px;
-    background: linear-gradient(180deg, #fd7a32 0%, #ffa149 100%);
+    background: rgba(255, 255, 255, 0.15);
     border-radius: 50px;
     padding: 10px;
     box-sizing: border-box;
 }
 
-.medium-text {
+.store-btn:focus {
+    color: #ffffff;
+}
+
+.store-btn:focus div {
+    background: linear-gradient(180deg, #fd7a32 0%, #ffa149 100%);
+}
+
+#club-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #533a79;
+    border-radius: 15px;
+    padding: 30px 22px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#club-block-icon {
+    margin-bottom: 30px;
+}
+
+#club-block-title {
+    margin-bottom: 10px;
+}
+
+#club-block-subtitle {
+    margin-bottom: 35px;
+}
+
+#club-block-btn {
+    background: #ffa049;
+    border-radius: 25px;
+    padding: 10px 18px;
+    border: 0px;
+    display: flex;
+    align-items: center;
+}
+
+#club-block-btn:hover {
+    background: linear-gradient(180deg, #fd7a32 0%, #ffa149 100%);
+    box-shadow: 0px 4px 20px rgba(253, 132, 56, 0.3);
+}
+
+#content {
+    padding: 25px 25px 76px 21px;
+}
+
+#search-row {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#search-icon {
+    position: absolute;
+    left: 20px;
+    top: 15px;
+}
+
+#search-input {
+    width: 370px;
+    height: 60px;
+    padding: 10px 10px 10px 70px;
+    background: #1b1a1d;
+    border: 2px solid #323036;
+    border-radius: 50px;
+    box-sizing: border-box;
+}
+
+#search-input::placeholder {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 150%;
+    color: #46444b;
 }
 
-.white-text {
+#search-input:focus {
+    background: #323036;
+    outline: none;
+}
+
+#search-icon-bell {
+    margin-left: 40px;
+}
+
+#toys-block-title {
+    margin-top: 68px;
+    margin-bottom: 30px;
+}
+
+#toys-filter-block {
+    display: flex;
+    align-items: center;
+    gap: 65px;
+}
+
+#filter-btns-block {
+    display: flex;
+    gap: 15px;
+}
+
+.filter-btn {
+    height: 44px;
+    padding: 10px 20px;
+    border: 2px solid #46444b;
+    border-radius: 50px;
+    background: transparent;
+    color: #46444b;
+    display: flex;
+    align-items: center;
+}
+
+.filter-btn:focus {
+    border: 2px solid #ffffff;
     color: #ffffff;
 }
 
-.grey-text {
-    color: rgba(255, 255, 255, 0.4);
+#filter-see-more-block {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#see-more-link {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #ffffff;
 }
